@@ -1,0 +1,105 @@
+@import 'weui.wxss';
+page{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	color: #313131;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+view,button,input,textarea,select,text{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: #313131; }
+
+image{ vertical-align: bottom;}
+button,input,textarea,select,.radio{ -webkit-appearance: none; appearance: none; border: none; resize: none; outline: none;  }
+.clearfix { display:block; zoom:1; }
+.clearfix::after { content:"."; display:block; height:0; clear:both; visibility:hidden; font-size:0; }
+.tr{text-align: right;}
+.tl{text-align: left;}
+.tc{text-align: center;justify-content: space-around;}
+.fl{float: left;}
+.fr{float: right;}
+
+.jiange{width: 100%;height: 10rpx;display: block;position: relative;}
+
+.ju{color: #fd4f00;}
+.hui{color: #838383}
+
+.f10{ font-size: 20rpx;}
+.f12{ font-size: 24rpx;}
+.f14{ font-size: 28rpx;}
+.f16{ font-size: 32rpx;}
+.f18{ font-size: 36rpx;}
+.f20{ font-size: 40rpx;}
+.f24{ font-size: 48rpx;}
+.f26{ font-size: 52rpx;}
+.f28{ font-size: 56rpx;}
+.f36{ font-size: 72rpx;}
+.mt5{ margin-top: 5px;}
+.mt10{ margin-top: 20rpx;}
+.mt15{ margin-top: 30rpx;}
+.mt20{ margin-top: 40rpx;}
+.mt40{ margin-top: 80rpx;}
+.mt50{ margin-top: 100rpx;}
+.mt70{ margin-top: 140rpx;}
+.mr5{ margin-right: 10rpx;}
+.mr10{ margin-right: 20rpx;}
+.mr15{ margin-right: 30rpx;}
+.mr20{ margin-right: 40rpx;}
+.ml5{ margin-left: 10rpx;}
+.ml10{ margin-left: 20rpx;}
+.ml15{ margin-left: 30rpx;}
+.mb5{ margin-bottom: 10rpx;}
+.mb10{ margin-bottom: 20rpx;}
+.mb15{ margin-bottom: 30rpx;}
+.mb20{ margin-bottom: 40rpx;}
+.m10{ margin: 20rpx;}
+.m15{ margin: 30rpx;}
+.m20{ margin: 40rpx;}
+
+.rmb{
+  font-size:20rpx;
+  font-family: 微软雅黑;
+ }
+
+
+
+.row{
+  flex-direction:row;
+  display: flex;
+}
+.column{
+  flex-direction:column;
+  display: flex;
+}
+.demo-text-6:before,.demo-text-2:before,.demo-text-3:before,.demo-text-4:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-6,demo-4,demo-3,demo-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.demo-6{width: 50%}
+.demo-4{width: 33.3333333%}
+.demo-3{width: 25%}
+.demo-2{width: 16.6666666%}
+
+.onetext{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+
+}
+
+
+
+
+
+

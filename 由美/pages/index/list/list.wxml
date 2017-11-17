@@ -1,0 +1,16 @@
+<view class="list-warp">
+  <block wx:for="{{items}}">
+    <navigator url="../del/del?id={{item.aid}}">
+      <view class="brand_item">
+        <image src="{{item.picure}}" class="pic"></image>
+        <view class="pic-text">
+          <text class="title-name fz30 justone">{{item.title}}</text>
+          <view class="pic-jiage row">
+            <text class="jiage"><text class="f24">￥</text>{{item.price}}</text>
+            <text class="yuanjia">原价:￥{{item.old_price}}</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>

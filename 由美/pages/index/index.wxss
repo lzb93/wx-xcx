@@ -1,0 +1,296 @@
+/**index.wxss**/
+
+/**app.wxss**/
+.wxhead{
+  width: 100%;
+  height: 100rpx;
+  text-align: center; 
+  background: #ffffff;
+  line-height: 100rpx;
+}
+ wxhead-ul{
+     white-space: nowrap;
+     overflow: auto;
+     overflow-y: hidden; 
+}
+.wxhead-li{
+  width: 25%;
+  height: 100rpx;
+  text-align: center;
+  display: inline-block;
+}
+
+.swiperone .slide-image{
+  width: 100%;
+  height: 360rpx;
+}
+.swiperone{
+  width: 100%;
+  height: 360rpx;
+}
+
+
+.swipertwo .slide-image{
+  width: 150rpx;
+  height: 150rpx;
+  display: block;
+  text-align: center;
+  margin: 20rpx;
+}
+.swipertwo{
+  background: #ffffff;padding-bottom: 20rpx;
+}
+
+
+/*lunboyangshi*/
+
+.swiper-container{  
+  position: relative;  
+  height: 360rpx;
+  
+}  
+.swiper-container .swiper{  
+  height: 360rpx;  
+}  
+.swiper-container .swiper .img{  
+  width: 100%;  
+  height: 100%;  
+}  
+.swiper-container .dots{  
+  position: absolute;  
+  left: 0;  
+  right: 0;  
+
+  bottom: 22rpx;  
+  display: flex;  
+  justify-content: center;  
+}  
+.swiper-container .dots .dot{  
+  margin: 6rpx;
+  padding: 5rpx;
+}  
+.dots-btn{
+  margin: 2rpx;  
+  width: 12rpx;  
+  height: 12rpx;  
+  background: #ffffff;
+  border-radius: 100rpx;  
+  transition: all .6s;  
+}
+.swiper-container .dots .dot.active{  
+  border: 2rpx solid #ffffff; 
+  border-radius: 100rpx;  
+  padding: 3rpx;
+
+} 
+
+/*three*/
+.three-warp{
+    display: flex;
+    width: 100%;
+    height:510rpx;
+    position: relative;
+}
+.threebg{
+    position: relative;
+    width: 100%;
+    height:510rpx;
+  
+}
+.threehead{
+   position: relative;
+}
+.threebg{
+   position: relative;
+   width: 100%;
+   height:510rpx;
+   opacity: 0.5;
+                
+}
+.threehead{
+    position: absolute;
+    width: 100%;
+    height: 140rpx;
+    top:0;
+}
+.three-swp{
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 350rpx;
+  top:140rpx;
+  
+}
+.three-swp .swiper-item{
+  padding: 0 12%;
+
+}
+.three-swp .three-main{
+  widows: 76%;
+  height: 240rpx;
+  position: relative;
+  border-radius:30rpx; 
+  
+  margin: 0 12%;
+  background: #ffffff;
+}
+.three-mainimg{
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 30rpx;
+
+}
+.gwcico{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom:20rpx;
+  margin-right: 20rpx;
+}
+.threeone{
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+  height: 50rpx;
+  display: flex;
+  
+  
+  
+}
+.threetext{
+   font-size: 24rpx;
+   line-height: 50rpx;
+   height: 50rpx;
+
+  
+}
+.freebbg{
+  height: 50rpx;
+  position: relative;
+  left: 12%;
+  widows: 75%;
+}
+
+
+
+
+/* four */
+.index-four{
+   margin-bottom: 20rpx;
+   position: relative
+}
+
+.four-dingwei{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 50rpx;
+   height: 240rpx;
+   z-index: 100
+}
+.four-dingwei image{
+  height: 240rpx;
+}
+
+.index-four image{
+  width: 100%;
+  
+}
+
+
+.index-four .four-rtimg image{
+  width: 100%;
+  height: 250rpx;
+  margin: 50rpx 0;
+}
+.four-rtimg{
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+.four-left{
+  width: 50%;
+  height: 632rpx;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  background: #ffffff;
+}
+.four-rt{
+  width: 50%;
+  display: inline-block;
+  height: 260rpx;
+  padding: 120rpx 0;
+  line-height: 50rpx;
+  text-align: left;
+  float: left;
+}
+.four-lt{
+  width: 100%;
+  height: 200rpx;
+  padding: 50rpx 0;
+  line-height: 50rpx;
+}
+.four-right{
+  padding-left: 1px;
+  width: 50%;
+  
+  height: 520rpx;
+  display: inline-block;
+
+}
+.fourtop{
+  
+   height: 316rpx;
+   width: 100%;
+   overflow: hidden;
+  background: #ffffff;
+   
+}
+.fourbom{
+  margin-top: 1px;
+   height: 315rpx;
+   overflow: hidden;
+   width: 100%;
+   background: #ffffff;
+}
+.index-four text{
+  display: block;
+  text-align: center;
+}
+.index-four .rmb{
+   display:inline-block;
+}
+
+/* five */
+.five-ban{
+  width: 100%;
+  height: 280rpx;
+  
+}
+.shop-image{
+   width: 180rpx;
+   height: 180rpx;
+   margin:30rpx 40rpx;
+
+}
+.five-warp{
+  background: #ffffff;
+  margin-bottom: 20rpx;
+}
+.ckgd{
+  margin:0 30rpx;
+  border-top: 1px solid #eeeeee;
+  font-size: 24rpx;  
+  height: 86rpx;
+  line-height: 86rpx;
+
+}
+.five-shop{
+  padding: 20rpx 0 50rpx 0;
+  text-align: center;
+}
+
+
+

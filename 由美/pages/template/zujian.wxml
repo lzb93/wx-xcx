@@ -1,0 +1,5 @@
+<template name="courseLeft">
+    <block  class="">
+        <image src="../../style/images/icon/fhdb.png"></image>
+    </block>
+</template>

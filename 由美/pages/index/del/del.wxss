@@ -1,0 +1,40 @@
+/* pages/index/del/del.wxss */
+.del-head{
+
+}
+.del-box{
+  padding:10rpx 2%;
+
+}
+.del-title{
+
+}
+.del-title image{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+
+/* foot */
+.del-foot{
+    background-color: #fff;
+    border-top:1px solid #eee;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10rpx 0;
+}
+.del-btn{
+    width: 90%;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin:0 5%;
+
+    border-radius:8px;
+    background: orange;
+    color: #fff;
+    text-align: center;
+
+}

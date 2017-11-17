@@ -1,0 +1,157 @@
+
+<!--index.wxml-->
+
+
+<!--head-->
+<view class="wxhead">
+  <view class="wxhead-ul">
+    <block wx:for="{{arr}}">
+      <navigator class="wxhead-li" url="../classify/classify">
+        <text>{{item.arrtext}}</text>
+      </navigator>
+    </block>
+  </view>
+</view>
+
+<!--lunmbo-->
+
+<view class="swiper-container">  
+  <swiper  autoplay="auto" interval="5000" duration="500" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">  
+    <block wx:for="{{imgUrls}}" bangtap="lunbo_one" wx:key="unique">  
+      <swiper-item>  
+        <image src="{{item}}" class="img"></image>  
+      </swiper-item>  
+    </block>  
+  </swiper>  
+   
+  <view class="dots">  
+    <block wx:for="{{slider}}" wx:key="unique">  
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}">
+            <view class="dots-btn"></view>
+      </view>  
+    </block>  
+  </view>  
+</view>
+
+
+
+
+<!-- classify lunbo -->
+<swiper class="swipertwo" indicator-dots="{{indicatorDots}}" autoplay="{{false}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper-item>
+    <block wx:for="{{arrkuai1}}">
+
+      <view class="wxhead-li"  bangtap="lunbo_classify">
+        <image src="{{item.arrimg}}" class="slide-image" />
+        <text>{{item.arrtext}}</text>
+      </view>
+
+    </block>
+  </swiper-item>
+  <swiper-item>
+    <block wx:for="{{arrkuai2}}">
+
+     <view class="wxhead-li"  bangtap="lunbo_classify">
+        <image src="{{item.arrimg}}" class="slide-image" />
+        <text>{{item.arrtext}}</text>
+      </view>
+
+    </block>
+  </swiper-item>
+  <swiper-item>
+    <block wx:for="{{arrkuai3}}">
+     <view class="wxhead-li"  bangtap="lunbo_classify">
+        <image src="{{item.arrimg}}" class="slide-image" />
+        <text>{{item.arrtext}}</text>
+      </view>
+
+    </block>
+  </swiper-item>
+</swiper>
+
+<!-- three -->
+<view class="three-warp">
+    <image class="threebg" src="../../style/images/freebg.png" ></image>
+    <image class="threehead"  src="../../style/images/icon/freeicon.png" ></image>
+  
+     <swiper class="three-swp" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{arrkuai1}}">
+           <swiper-item>
+              <view class="three-main row" >
+                <image src="{{item.arrimg}}" class="demo-4 three-mainimg" bangtap="mingxin_shop"></image>
+                <view class="demo-6">
+                     <text class="threeone" bangtap="mingxin_shop">{{item.arrhead}}</text>
+                     <text class="threetext">{{item.arrtext}}</text>
+                     <view class="f16 ju mt20"><text class="rmb ju">￥</text>198.00</view>
+                </view>
+                <image src="../../style/images/icon/gwc.png" class="demo-2 gwcico"  bangtap="gwc_tj"></image>
+              </view>
+              <image class="freebbg" src="../../style/images/freebbg.png"></image>
+           </swiper-item>
+         </block>
+    </swiper> 
+</view>
+
+
+
+<!-- four -->
+
+<view class="index-four">
+  <view class="four-dingwei">
+     <image src="../../style/images/bktj.png"></image>
+  </view>
+  <view class="four-left"  bangtap="bktj_shop">
+
+    <view class="four-lt">
+      <text class="f14">舒缓好益贴</text>
+      <view class="f14 tc ju"><text class="rmb ju">￥</text>198.00</view>
+    </view>
+    <image src="../../style/images/four1.jpeg"></image>
+
+  </view>
+  <view class="four-right">
+    <view class="fourtop"  bangtap="bktj_shop">
+      <view class="four-rtimg">
+        <image src="../../style/images/lunbtwo1.png"></image>
+      </view>
+      <view class="four-rt">
+        <text class="f14">祛痘粉刺膏</text>
+        <view class="f14 tc ju"><text class="rmb ju">￥</text>138.00</view>
+      </view>
+
+    </view>
+
+    <view class="fourbom"  bangtap="bktj_shop">
+      <view class="four-rtimg">
+        <image src="../../style/images/lunbtwo2.png"></image>
+      </view>
+      <view class="four-rt">
+        <text class="f14">舒缓洁面乳</text>
+        <view class="f14 tc ju"><text class="rmb ju">￥</text>98.00</view>
+      </view>
+
+    </view>
+  </view>
+
+</view>
+
+
+<!-- five -->
+<view class="five-warp" wx:for="{{fiveimg}}" wx:key="{{fiveimg}}">
+  <view>
+    <image class="five-ban" src="{{item}}"  bangtap="xilei_list"></image>
+  </view>
+  <!--二次嵌套循环-->
+  <view class="row">
+  <block wx:for="{{items}}" wx:for-item="items" wx:key="items">
+  <navigator url="del/del?id={{items.aid}}" class="demo-4 five-shop">
+     <image class="shop-image" src="{{items.picure}}"></image>
+     <text class=""><text class="rmb">￥</text>{{items.price}}</text>
+  
+  </navigator>
+       
+       
+  </block>
+  </view>
+  <navigator url="list/list" class="tc ckgd hui"  bangtap="xilei_list">查看更多+</navigator>
+</view>

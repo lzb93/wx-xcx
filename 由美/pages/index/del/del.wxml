@@ -1,0 +1,21 @@
+<!--detail.wxml-->
+
+<view class="del-head container">
+    <image src="{{arts.picure}}"></image>
+</view>
+
+<view class="del-box">
+     <view class="del-title">
+          <text class="fz36">标题{{arts.title}}</text>
+     </view>
+
+     <view class="pic-jiage row">
+          <text class="jiage"><text class="fz24">￥</text>{{arts.price}}</text>
+        
+    </view>
+
+    <view class="flexbox">
+  
+       <text class="col-1 hui fz26">销量{{arts.solds}}</text>
+    </view> 
+</view>
